@@ -1,0 +1,355 @@
+:root {
+    --theme-accent: #FFC700;
+    --theme-main: #ffffff;
+    --theme-bg: #222527;
+    --theme-modal-bg: #ffffff66;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+header {
+    padding-top: 32px;
+    /* padding: 32px 0 72px 0; */
+}
+
+.about-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 32%;
+    gap: 24px;
+}
+.social-link svg {
+    fill: var(--theme-accent);
+}
+
+.container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.about {
+    height: 100%;
+    /* height: 700px; */
+    width: 100%;
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.about-name {
+    color: var(--theme-accent);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.about-profession {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: var(--theme-main);
+}
+
+.about-positions {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-accent);
+    margin-bottom: 8px;
+    list-style: disc;
+    margin-left: 18px;
+}
+
+.about-positions-text {
+    color: var(--theme-main);
+}
+
+.about-button {
+    border: 0;
+    outline: 0;
+    padding: 16px 32px;
+    margin-top: 40px;
+    border-radius: 38px;
+    background-color: var(--theme-accent);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    color: #060803;
+}
+
+.about-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-main);  
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 60px;
+    /* margin-top: 104px; */
+}
+
+.darth-vader-image {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.death-star-image {
+    position: absolute;
+    right: 0px;
+    left: 200px;
+    margin: 0 auto;
+    bottom: -100px;
+    opacity: 0.4;
+}
+
+.achivements {
+    background-color: var(--theme-bg);
+    padding: 60px 0;
+}
+
+.achivements-header {
+    color: var(--theme-accent);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.achivements-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.achivements-item {
+    width: 25%;
+}
+
+.achivements-icon {
+    height: 60px;
+    width: 60px;
+}
+
+.achivements-item-header {
+    color: var(--theme-accent);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px 0 4px 0;
+}
+
+.achivements-item-text {
+    color: var(--theme-main);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.codex {
+    padding: 186px 0;
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.codex .container {
+    flex-direction: row;
+}
+
+.codex-left-side, .codex-right-side {
+    width: 50%;
+}
+
+.codex-motto {
+    color: var(--theme-accent);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 60px;
+}
+
+.codex-title {
+    color: var(--theme-accent);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.codex-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-main);
+    margin-bottom: 4px;
+}
+
+.codex-text--last {
+    margin-bottom: 60px;
+}
+
+.footer {
+    background-color: var(--theme-bg);
+    padding: 60px 0 66px 0;
+}
+
+.footer .container {
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-main);
+    text-align: center;
+    margin-bottom: 54px;
+    width: 740px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-modal-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-form {
+    padding: 40px 80px;
+    background-color: var(--theme-bg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal-form-title {
+    color: var(--theme-accent);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px; 
+    text-align: center;
+}
+
+.modal-form-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-main);
+    margin-bottom: 32px;
+    text-align: center; 
+}
+
+.modal-form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.modal-form-field-label {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    color: var(--theme-main);
+}
+
+.modal-form-name, .modal-form-email {
+    height: 40px;
+    width: 440px;
+    border: 1px solid var(--theme-main);
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.modal-form-submit {
+    border: 0;
+    outline: 0;
+    padding: 16px 32px;
+    margin-top: 16px;
+    border-radius: 38px;
+    background-color: var(--theme-accent);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    color: #060803;
+}
+
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-success {
+    background-color: var(--theme-bg);
+    padding: 40px 80px 48px 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    
+}
+
+.modal-success-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-accent);
+    margin-bottom: 112px;
+    text-align: center;
+}
+
+.modal-success-text {
+    color: var(--theme-main);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 36px;
+    text-align: center;
+
+}
