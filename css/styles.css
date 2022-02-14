@@ -1,8 +1,10 @@
 :root {
     --theme-accent: #FFC700;
     --theme-main: #ffffff;
-    --theme-bg: #222527;
-    --theme-modal-bg: #ffffff66;
+    --theme-bgd: #222527;
+    /* --theme-modal-bgd: #ffffff66; */
+    --theme-btn-text: #060803;
+    --theme-modal-bgd: rgb(239 236 236 / 90%); 
 }
 
 body {
@@ -15,6 +17,9 @@ html, body {
 }
 header {
     padding-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     /* padding: 32px 0 72px 0; */
 }
 
@@ -93,7 +98,7 @@ header {
     cursor: pointer;
     font-size: 16px;
     line-height: 24px;
-    color: #060803;
+    color: var(--theme-btn-text);
 }
 
 .about-description {
@@ -133,7 +138,7 @@ header {
 }
 
 .achivements {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-bgd);
     padding: 60px 0;
 }
 
@@ -217,7 +222,7 @@ header {
 }
 
 .footer {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-bgd);
     padding: 60px 0 66px 0;
 }
 
@@ -240,7 +245,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--theme-modal-bg);
+    background-color: var(--theme-modal-bgd);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +256,7 @@ header {
 
 .modal-form {
     padding: 40px 80px;
-    background-color: var(--theme-bg);
+    background-color: var(--theme-bgd);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -317,7 +322,7 @@ header {
     cursor: pointer;
     font-size: 16px;
     line-height: 24px;
-    color: #060803;
+    color: var(--theme-btn-text);
 }
 
 .modal-active {
@@ -326,7 +331,7 @@ header {
 }
 
 .modal-success {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-bgd);
     padding: 40px 80px 48px 80px;
     position: relative;
     display: flex;
@@ -352,4 +357,17 @@ header {
     margin-bottom: 36px;
     text-align: center;
 
+}
+
+.about--light,
+.codex--light {
+    background-image: url("../img/stardust.jpg");
+}
+
+.logo svg, .achivements-icon svg, .footer svg, .modal-success-icon svg {
+    fill: var(--theme-accent);
+}
+
+.close-icon svg {
+    fill: var(--theme-main);
 }
