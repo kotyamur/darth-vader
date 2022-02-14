@@ -2,7 +2,6 @@
     --theme-accent: #FFC700;
     --theme-main: #ffffff;
     --theme-bgd: #222527;
-    /* --theme-modal-bgd: #ffffff66; */
     --theme-btn-text: #060803;
     --theme-modal-bgd: rgb(239 236 236 / 90%); 
 }
@@ -20,7 +19,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* padding: 32px 0 72px 0; */
 }
 
 .about-social {
